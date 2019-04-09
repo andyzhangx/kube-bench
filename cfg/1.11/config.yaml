@@ -22,7 +22,6 @@ master:
 
 node:
   kubelet:
-    defaultconf: /etc/kubernetes/kubelet.conf
 
   proxy:
     defaultconf: /etc/kubernetes/addons/kube-proxy-daemonset.yaml
