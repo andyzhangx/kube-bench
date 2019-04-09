@@ -1,6 +1,6 @@
 SOURCES := $(shell find . -name '*.go')
 BINARY := kube-bench
-DOCKER_REGISTRY ?= aquasec
+DOCKER_REGISTRY ?= andyzhangx
 VERSION ?= $(shell git rev-parse --short=7 HEAD)
 IMAGE_NAME ?= $(DOCKER_REGISTRY)/$(BINARY):$(VERSION)
 TARGET_OS := linux
