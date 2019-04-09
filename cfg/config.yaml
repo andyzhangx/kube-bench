@@ -83,7 +83,7 @@ node:
       - "kubelet"
     defaultconf: "/var/lib/kubelet/config.yaml"
     defaultsvc: "/etc/systemd/system/kubelet.service.d/10-kubeadm.conf"
-    defaultkubeconfig: "/etc/kubernetes/kubelet.conf"
+    defaultkubeconfig: "/var/lib/kubelet/kubeconfig"
 
   proxy:
     bins:
@@ -93,7 +93,7 @@ node:
     confs:
       - /etc/kubernetes/proxy
       - /etc/kubernetes/addons/kube-proxy-daemonset.yaml
-    defaultkubeconfig: "/etc/kubernetes/proxy.conf"
+    defaultkubeconfig: "/var/lib/kubelet/kubeconfig"
 
 federated:
   components:
